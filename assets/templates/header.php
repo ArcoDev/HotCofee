@@ -23,7 +23,7 @@
             </div>
             <div class="box search">
                 <div class=" content-search">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/search.svg" alt="icon search" />
+                    <img loading ="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/search.svg" alt="icon search" />
                     <input type="search" placeholder="search...">
                 </div>
             </div>
@@ -34,12 +34,12 @@
                 </ul>
             </div>
             <div class="box menu-mobile">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/hamburguer.svg" alt="icon menu mobile">
+                <img loading ="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/hamburguer.svg" alt="icon menu mobile">
             </div>
         </nav>
         <div class="content-header">
             <div class="info-coffee">
-                <h1>Make better <br> coffee <span><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/coffee.svg" alt="Coffee"></span></h1>
+                <h1>Make better <br> coffee <span><img loading ="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/coffee.svg" alt="Coffee"></span></h1>
                 <form action="">
                     <input class="email" type="email" placeholder="you@domain.com">
                     <input class="btn-email" type="submit" value="SUBSCRIBE">

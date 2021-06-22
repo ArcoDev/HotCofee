@@ -14,7 +14,7 @@
                                 </div>
                             </div>
                             <div class="img-article">
-                                <img src="'.$route.$articles['image'].'" alt="Image HotCoffee">
+                                <img loading ="lazy" src="'.$route.$articles['image'].'" alt="Image HotCoffee">
                             </div>
                         </div>';
             }
@@ -22,8 +22,10 @@
     </article>
     <!-- Button Next Page -->
     <aside class="btn-aside">
-        <a href="#" class="btn-next">Next Page <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/icons/next.svg" alt="Next Icon"></a>
+        <a href="#" class="btn-next">
+            Next Page 
+            <img loading ="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/icons/next.svg" alt="Next Icon">
+        </a>
     </aside>
     <!-- Contact Form -->
     <section class="contact">
