@@ -307,7 +307,8 @@ input {
 }
 
 .grid-container .article:nth-child(1) .info-article {
-  padding: 5rem;
+  padding: 5rem 5rem 1rem 5rem;
+  width: 90%;
 }
 
 @media screen and (max-width: 767px) {
@@ -360,7 +361,7 @@ input {
 
 @media screen and (max-width: 767px) {
   .grid-container .article:nth-child(1) .info-article .footer-info a {
-    width: 30%;
+    width: 32%;
     margin-top: .7rem;
   }
 }
@@ -383,8 +384,8 @@ input {
 }
 
 .grid-container .article:nth-child(2), .grid-container .article:nth-child(3), .grid-container .article:nth-child(4) {
-  /*display: flex;
-            flex-direction: column-reverse;*/
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 @media screen and (max-width: 767px) {
@@ -403,7 +404,7 @@ input {
 }
 
 .grid-container .article:nth-child(2) .info-article, .grid-container .article:nth-child(3) .info-article, .grid-container .article:nth-child(4) .info-article {
-  padding: 3rem;
+  padding: 3rem 3rem 1rem 3rem;
 }
 
 .grid-container .article:nth-child(2) .info-article h2, .grid-container .article:nth-child(3) .info-article h2, .grid-container .article:nth-child(4) .info-article h2 {
@@ -450,7 +451,7 @@ input {
 
 @media screen and (max-width: 767px) {
   .grid-container .article:nth-child(2) .info-article .footer-info a, .grid-container .article:nth-child(3) .info-article .footer-info a, .grid-container .article:nth-child(4) .info-article .footer-info a {
-    width: 30%;
+    width: 32%;
     margin-top: .7rem;
   }
 }
@@ -470,7 +471,8 @@ input {
 }
 
 .grid-container .article:nth-child(5) .info-article {
-  padding: 6rem;
+  padding: 6rem 6rem 1rem 6rem;
+  width: 90%;
 }
 
 @media screen and (max-width: 767px) {
@@ -536,6 +538,7 @@ input {
 .grid-container .article:nth-child(5) .footer-info {
   display: flex;
   justify-content: space-between;
+  margin-top: 5rem;
 }
 
 .grid-container .article:nth-child(5) .footer-info p {
@@ -552,7 +555,7 @@ input {
 
 @media screen and (max-width: 767px) {
   .grid-container .article:nth-child(5) .footer-info a {
-    width: 30%;
+    width: 32%;
     margin-top: .7rem;
   }
 }
