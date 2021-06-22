@@ -1,5 +1,5 @@
 <?php
-$emailTest = "cacosta@awsoftware.mx";
+$emailTest = "arcodev07@gmail.com";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
