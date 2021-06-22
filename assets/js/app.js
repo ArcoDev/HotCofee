@@ -17,12 +17,33 @@ $("#send").click(function (e) {
 
   if (name === "" || email === "" || message === "") {
     error.style.opacity = "1";
-    txtError.innerHTML = "Todos los campos son obligatorios";
+    txtError.innerHTML = "All fields are required";
     setTimeout(function () {
       error.style.opacity = "0";
     }, 5000);
     return false;
+  } else if (name.length > 20) {
+    error.style.opacity = "1";
+    txtError.innerHTML = 'Name too long';
+    setTimeout(function () {
+      error.style.opacity = "0"
+    }, 3000);
+    return false;
+  } else if (!expresionEmail.test(email)) {
+    error.style.opacity = "1";
+    txtError.innerHTML = "Invalid email format";
+    setTimeout(function () {
+      error.style.opacity = "0";
+    }, 3000);
+    return false;
+  } else if (message.length > 60) {
+    error.style.opacity = "1";
+    txtError.innerHTML = 'Message too long';
+    setTimeout(function () {
+      error.style.opacity = "0";
+    }, 3000);
+    return false;
   } else {
-    alert("Se ha enviado correctamente");
+    alert('Todo correcto');
   }
 });

@@ -124,6 +124,7 @@ input {
     border-radius: 10px;
     transition: all 2s ease-out;
     opacity: 0;
+
     h6 {
         font-size: 14px;
         text-transform: uppercase;
@@ -532,12 +533,20 @@ input {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    .title {
+        h2 {
+            font-size: 42px;
+        }
+    }
+
     .alerts {
         width: 50%;
-        
+
         .error {
             @include alerts;
         }
+
         .succes {
             @include alerts;
             color: #155724;
@@ -545,6 +554,7 @@ input {
             border-color: #c3e6cb;
         }
     }
+
     .form {
         width: 80%;
         display: flex;
@@ -556,22 +566,26 @@ input {
             font-weight: 700;
         }
 
-        input, textarea {
+        input,
+        textarea {
             padding: 1rem;
             border: 1px solid #E2E2E2;
             box-sizing: border-box;
             border-radius: 6px;
             outline: none;
-            &::placeholder{
+
+            &::placeholder {
                 color: $gray;
             }
         }
-        .btn-send{
+
+        .btn-send {
             width: 100%;
             display: flex;
             justify-content: flex-end;
             margin-top: 1rem;
-            button{
+
+            button {
                 @include buttonPurple;
             }
         }
