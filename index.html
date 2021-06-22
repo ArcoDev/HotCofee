@@ -127,7 +127,15 @@
             <div class="title">
                 <h2>Contact</h2>
             </div>
-                <form action="" class="form">
+            <div class="alerts">
+                <div id="error" class="error">
+                    <p id="txtError"></p>
+                </div>
+                <div id="succes" class="succes">
+                    <h6 id="msjAlert">Se ha enviado correctamente tu mensaje.</h6>
+                </div>
+            </div>
+                <form action=""  class="form"> 
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name" placeholder="Enter you name">
                     <label for="name">Email:</label>
@@ -135,7 +143,7 @@
                     <label for="message">Message:</label>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave your message"></textarea>
                     <div class="btn-send">
-                        <button type="submit">Send</button>
+                        <button id="send" type="submit">Send</button>
                     </div>
                 </form>
         </section>
@@ -156,7 +164,7 @@
             </a>
         </div>
     </footer>
-
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 
