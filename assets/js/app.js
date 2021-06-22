@@ -1,3 +1,17 @@
+window.addEventListener('DOMContentLoaded', function() {
+  animaMenu();
+});
+
+function animaMenu() {
+  const menu = document.querySelector('.menu-mobile');
+  const items = document.querySelector('.items');
+  if(menu) {
+    menu.addEventListener('click', () => {
+      items.classList.toggle('anima-menu');
+    });
+  }
+}
+
 $("#send").click(function (e) {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
