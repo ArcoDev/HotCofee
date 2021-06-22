@@ -312,6 +312,9 @@ input {
     grid-auto-rows: auto;
     gap: 30px;
     padding-bottom: 30px;
+    @include mobile {
+        overflow-x: hidden;
+    }
     @include tablet {
         overflow-x: hidden;
     }
