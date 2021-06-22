@@ -1,7 +1,3 @@
-window.addEventListener("DOMContentLoaded", function () {
-  validarFormulario();
-});
-
 $("#send").click(function (e) {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;

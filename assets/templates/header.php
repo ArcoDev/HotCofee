@@ -1,3 +1,7 @@
+<?php
+    //conexion a la BD
+    $con = mysqli_connect('localhost', 'root', '', 'mijo_brands');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
