@@ -3,13 +3,11 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 $("#send").click(function (e) {
-  e.preventDefault();
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
-  const send = document.getElementById("send").value;
   const error = document.getElementById("error");
-  const success = document.getElementById("success");
+  const correct = document.getElementById("correct");
   const txtError = document.getElementById("txtError");
 
   let expresionEmail;
@@ -20,7 +18,7 @@ $("#send").click(function (e) {
     txtError.innerHTML = "All fields are required";
     setTimeout(function () {
       error.style.opacity = "0";
-    }, 5000);
+    }, 3000);
     return false;
   } else if (name.length > 20) {
     error.style.opacity = "1";
@@ -44,6 +42,16 @@ $("#send").click(function (e) {
     }, 3000);
     return false;
   } else {
-    alert('Todo correcto');
+    $.ajax({
+      url: 'assets/email/email.php',
+      type: 'POST',
+      dataType: $('#send-email').serialize(),
+      success: function () {
+        correct.style.opacity = "1";
+        setTimeout(function () {
+          correct.style.opacity = "0";
+        }, 3000);
+      }
+    });
   }
 });

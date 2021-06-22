@@ -119,10 +119,11 @@ input {
     align-items: center;
     justify-content: center;
     color: #a94442;
+    font-weight: 700;
     background-color: #f2dede;
     border-color: #ebccd1;
     border-radius: 10px;
-    transition: all 2s ease-out;
+    transition: all 1s ease-out;
     opacity: 0;
 
     h6 {
@@ -309,7 +310,7 @@ input {
             }
 
             &.img-people {
-                background-image: url('../img/people.png');
+                background-image: url('http://localhost/mijo_brands/wp-content/themes/HotCoffee/assets/img/people.png');
                 background-size: 476px 323px;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -547,7 +548,7 @@ input {
             @include alerts;
         }
 
-        .succes {
+        .correct {
             @include alerts;
             color: #155724;
             background-color: #d4edda;
