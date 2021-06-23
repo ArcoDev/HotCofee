@@ -27,4 +27,4 @@ _Se requiere conocimientos basicos de wordpress y de servidores locales_
 ```
 ### Si tienes dudas con gusto mandame un :email: al siguiente correo arcode07@gmail.com
 
-⌨️ con ❤️ por [Christian Acosta](https://github.com/arcodev)
+Desarrolado ⌨️ con ❤️ por [Christian Acosta](https://github.com/arcodev)
