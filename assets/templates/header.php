@@ -1,6 +1,6 @@
 <?php
     //conexion a la BD
-    $con = mysqli_connect('localhost', 'root', '', 'mijo_brands');
+    $con = mysqli_connect('localhost', 'root', '', 'hotcoffee');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HotCoffee</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 </head>
 
 <body>
@@ -46,6 +46,7 @@
                 </form>
             </div>
             <div class="info-coffee img-people">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people.png" alt="People">
             </div>
         </div>
     </header>

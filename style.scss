@@ -205,7 +205,7 @@ input {
 
             input {
                 border: none;
-                
+
                 @include mobile {
                     border-bottom: 2px solid $lineFooter;
                     width: 110px;
@@ -363,17 +363,19 @@ input {
             }
 
             &.img-people {
-                background-image: url('http://localhost/mijo_brands/wp-content/themes/HotCoffee/assets/img/people.png');
-                background-size: 476px 323px;
-                background-position: center;
-                background-repeat: no-repeat;
+                img {
+                    height: 323px;
+                    width: 476px;
 
-                @include mobile {
-                    background-size: contain;
-                }
+                    @include mobile {
+                        width: 350px;
+                        object-fit: contain;
+                    }
 
-                @include tablet {
-                    background-size: contain;
+                    @include tablet {
+                        width: 380px;
+                        object-fit: contai
+                    }
                 }
             }
         }
@@ -395,7 +397,7 @@ input {
 
     @include mobile {
         overflow-x: hidden;
-        margin-top: 1rem;
+        margin-top: 2.4rem;
     }
 
     @include tablet {
@@ -522,7 +524,7 @@ input {
 
                 h2 {
                     font-size: 40px;
-                    width: 70%;
+                    width: 90%;
                     line-height: 48.41px;
 
                     @include mobile {
@@ -547,7 +549,7 @@ input {
             .footer-info {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 5rem;
+                margin-top: 3rem;
                 @include footerArticles;
 
                 p {
@@ -628,6 +630,10 @@ input {
         width: 80%;
         display: flex;
         flex-direction: column;
+
+        @include mobile {
+            width: 90%;
+        }
 
         label {
             margin: 1rem 0 .5rem 0;

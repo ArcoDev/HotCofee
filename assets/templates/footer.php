@@ -3,13 +3,13 @@
             <h3>hotcoffee <span>2020 copyright all rights reserved</span></h3>
         </div>
         <div class="socials">
-            <a href="instagram.com"> 
+            <a target="_blank" href="instagram.com"> 
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg" alt="Instagram">
             </a>
-            <a href="twitter.com">
+            <a target="_blank" href="twitter.com">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/twitter.svg" alt="Twitter">
             </a>
-            <a href="linkedin.com">
+            <a target="_blank" href="linkedin.com">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/linkedin.svg" alt="Linkedin">
             </a>
         </div>
