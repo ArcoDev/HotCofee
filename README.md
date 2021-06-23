@@ -18,7 +18,7 @@ _Se requiere conocimientos basicos de wordpress y de servidores locales_
 
 ```
 1.- Ejecutar Servidor local (encender apache y mysql).
-2.- En archvo header, modificar la conexion de la base de datos con sus credenciales correspondientes
+2.- En archivo header, modificar la conexion de la base de datos con sus credenciales correspondientes
 3.- Acceder a phpmyadmin e importar el archivo sql.
 4.- Acceder a wordpress y seguir la guía de instalación.
 5.- En la siguiente ruta agrega los archivos del repositorio (wp-content\themes\archivos del repositorio).
